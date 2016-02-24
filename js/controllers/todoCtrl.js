@@ -138,10 +138,10 @@ angular.module('todomvc')
 
 			todos[$scope.orderMethod](function(a, b){
 				if(a.title <=  b.title){
-					return -1;
+					return 1;
 				}
 				else {
-					return 1;
+					return -1;
 				}
 			});
 			//console.log(todoList.todos);
